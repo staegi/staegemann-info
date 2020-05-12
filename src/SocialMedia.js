@@ -6,10 +6,10 @@ import './socialmedia.scss';
 function SocialMedia(props) {
     return (
         <div id="social-media">
-            <Parallax speed={1} zIndex={9999}>
+            <Parallax speed={0.4} zIndex={9999}>
                 <div>
                     {props.media.map((medium) =>
-                        <SocialIcon className="mr-2" bgColor="#6c757d" fgColor="#ffffff" style={{height: 36, width: 36}} url={medium}/>
+                        <SocialIcon target="_blank" className="mr-2" bgColor="#6c757d" fgColor="#ffffff" style={{height: 36, width: 36}} url={medium}/>
                     )}
                     Follow me
                 </div>

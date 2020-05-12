@@ -14,16 +14,34 @@ const projects = [
         title: 'Web',
         items: [
             {
+                title: 'Praxis Dr. Lindner',
+                image: '/images/projects/web/praxis-lindner.jpg',
+                link: 'https://praxis-lindner.berlin/',
+                description: 'Created a multilingual and multidomain web site to present the doctor\'s surgery based on [Wordpress](https://wordpress.org/).'
+            },
+            {
+                title: 'Warehouse+',
+                image: '/images/projects/web/warehouseplus.jpg',
+                link: 'https://warehouseplus.de/',
+                description: 'Created a web site to present the product based on [Wordpress](https://wordpress.org/). This web site and the product stacks are running in [AWS](https://aws.amazon.com/) with [Docker](https://www.docker.com) in a [Rancher](https://rancher.com) environment to be scalable and high available. Each customer has it\'s own stack with an API bysed on [Symfony 3](https://symfony.com), a [ReactJS](https://reactjs.org) frontend, a [MySQL](https://www.mysql.com/) database and a Let\'s encrypt container to generate certificates for the customer subdomain automatically. Besides there a serveral other services running e.g. [RabbitMQ](https://www.rabbitmq.com) as message queue and [Elasticsearch](https://www.elastic.co/) as search engine.'
+            },
+            {
+                title: 'Brandilla',
+                image: '/images/projects/web/brandilla.jpg',
+                link: 'https://brandilla.de/',
+                description: 'Created a multilingual and multidomain web site to present the marketing product based on [Wordpress](https://wordpress.org/). Addtionally we have developed a backoffice application to manage all point of sales, marketing campaigns and so on. This is based of a [Symfony 3](https://symfony.com) API, an [AngularJS](https://angularjs.org) frontend, a [MySQL](https://www.mysql.com/) database, an [Elasticsearch](https://www.elastic.co/) search engine and a [RabbitMQ](https://www.rabbitmq.com) message queue for exports.'
+            },
+            {
                 title: 'vijoa',
                 image: '/images/projects/web/vijoa.jpg',
                 link: 'https://vijoa.de/',
-                description: 'Created a multilingual and multidomain web site to present the video product of the vijoa based on [Wordpress](https://wordpress.org/). It\'s running in AWS with Docker in a Rancher environment to be scalable and high available.'
+                description: 'Created a multilingual and multidomain web site to present the video product of the vijoa based on [Wordpress](https://wordpress.org/).'
             },
             {
                 title: 'interim Group',
                 image: '/images/projects/web/interim-group.jpg',
                 link: 'https://interim-group.de/',
-                description: 'Created a multilingual and multidomain web site to present the concept of the interim Group based on [Wordpress](https://wordpress.org/). It\'s running in AWS with Docker in a Rancher environment to be scalable and high available.'
+                description: 'Created a multilingual and multidomain web site to present the concept of the interim Group based on [Wordpress](https://wordpress.org/). Together with a [GraphQL](https://graphql.org) API for a new developed [job portal](https://jobportal.interim-group.de) and several other microservices it\'s running in AWS with Docker in a Rancher environment to be scalable and high available.'
             },
             {
                 title: 'SimpliOffice',
@@ -212,45 +230,52 @@ const projects = [
         title: 'Mobile',
         items: [
             {
+                title: 'Warehouse+',
+                image: '/images/projects/mobile/warehouseplus.jpg',
+                client: 'WHplus GmbH',
+                link: 'https://apps.apple.com/app/id1492116892',
+                description: 'This app belongs to the web platform of [Warehouse+](https://warehouseplus.de/). With it you can stock in articles by barcodes, documenting damages and assign is to a warehouse place.'
+            },
+            {
                 title: 'Find my nextbike',
                 image: '/images/projects/mobile/nextbike.jpg',
-                client: 'made by us',
-                link: 'https://itunes.apple.com/app/id530463118',
+                client: 'made by me',
+                link: 'https://apps.apple.com/app/id530463118',
                 description: 'With this app you can rent more than 10.000 bicycles available around the clock in 11 countries worldwide. You will be able to locate bikes nearby and you can rent them instantly. With the integrated bar code scanner you will be able to rent bikes with a QR-Code even faster. In addition you are able to get information, register, reset your PIN, invite friends and redeem vouchers.'
             },
             {
                 title: 'zapf service',
                 image: '/images/projects/mobile/zapf.jpg',
                 client: 'frag zapf GmbH',
-                link: 'https://itunes.apple.com/app/id385730709',
+                link: 'https://apps.apple.com/app/id385730709',
                 description: 'Let you plan your movement. You can list your whole stuff like furnitures and devices. It calculates the volume in cubic meters and the needed boxes and other equipments. And you can get an individual offer for this movement by [zapf umzüge](http://zapf.de/).'
             },
             {
                 title: 'KÜS - Sicherheit mit Sympathie und Sachverstand',
                 image: '/images/projects/mobile/kues.jpg',
                 client: 'KÜS',
-                link: 'https://itunes.apple.com/app/id427180500',
+                link: 'https://apps.apple.com/app/id427180500',
                 description: 'Read news regarding cars, calculate your german particulate matter badge and find the next partner of [KÜS](http://www.kues.de/)'
             },
             {
                 title: 'iBerlin',
                 image: '/images/projects/mobile/iberlin.jpg',
                 client: 'Berlin Partner GmbH',
-                link: 'https://itunes.apple.com/app/id357475290',
+                link: 'https://apps.apple.com/app/id357475290',
                 description: 'Find the place to be in Berlin which are recommended by [Berlin Partner](http://www.berlin-partner.de/)'
             },
             {
                 title: 'Unsere Schlemmertüte',
                 image: '/images/projects/mobile/schlemmertuete.jpg',
                 client: 'Carolinas Food Services GmbH',
-                link: 'https://itunes.apple.com/app/id54464694',
+                link: 'https://apps.apple.com/app/id54464694',
                 description: 'Shows the recipes of the delivered menus and how to cook them for the delivery service on [www.schlemmertuete.de](http://www.schlemmertuete.de/)'
             },
             {
                 title: 'AcuApp Premium',
                 image: '/images/projects/mobile/acuapp.jpg',
                 client: 'Maitri Hillebrecht',
-                link: 'https://itunes.apple.com/app/id45074540',
+                link: 'https://apps.apple.com/app/id45074540',
                 description: 'Health on demand! This is the solution for 555 illnesses, from acne to allergies, burnout syndrome, depressions, lovesickness, impotence, migraine, tinnitus up to toothaches which you can easily treat with acupressure yourselves. Easy, low-cost and without any harmful secondary effects.'
             },
             {
@@ -258,7 +283,7 @@ const projects = [
                 image: '/images/projects/mobile/iredmine.jpg',
                 client: 'Weißhuhn & Weißhuhn Komm. GmbH',
                 description: 'Redmine - the famous project management tool - brought to your mobile device by iRedmine. With iRedmine you can browse your projects, view issues and even create new issues on the go. iRedmine can handle multiple accounts supporting a variety of installation options such as HTTPS, HTTP authentication, custom ports and path installations.',
-                link: 'https://itunes.apple.com/app/id32709270'
+                link: 'https://apps.apple.com/app/id32709270'
             },
         ]
     },
@@ -315,14 +340,15 @@ const technologies = [
     {title: 'Rancher', regular: '/images/technologies/rancher@1x.png', retina: '/images/technologies/rancher@2x.png'}
 ];
 const media = [
-    'https://www.linkedin.com/in/thomas-stägemann-30616242/',
-    'https://www.xing.com/profile/Thomas_Staegemann',
-    'https://github.com/staegi',
-    'https://www.facebook.com/tomcat2111',
-    'https://www.youtube.com/user/tomcat2111',
-    'https://www.twitter.com/tomcat2111',
-    'https://www.pinterest.de/staegi',
     'mailto:thomas@staegemann.info',
+    'https://www.pinterest.de/staegi',
+    'https://www.twitter.com/tomcat2111',
+    'https://www.youtube.com/user/tomcat2111',
+    'https://www.facebook.com/tomcat2111',
+    'https://www.instagram.com/tomcat2111',
+    'https://github.com/staegi',
+    'https://www.xing.com/profile/Thomas_Staegemann',
+    'https://www.linkedin.com/in/thomas-stägemann-30616242/',
 ];
 
 function App() {
