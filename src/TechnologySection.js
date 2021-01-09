@@ -11,7 +11,7 @@ function TechnologySection(props) {
             <h3 className="text-uppercase">Technologies</h3>
             <Row>
                 {props.technologies.map((technology) =>
-                    <Col md={2} className="p-3">
+                    <Col md={2} className="pt-4 pb-4">
                         <Image title={technology.title} alt={technology.title} src={technology.regular} srcSet={technology.regular + ' 1x,' + technology.retina + ' 2x' } fluid/>
                     </Col>
                 )}

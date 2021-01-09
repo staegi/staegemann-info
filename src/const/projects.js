@@ -288,7 +288,7 @@ const projects = [
                 description: 'This is my first project to learn developing with Objective-C. Therefore I\'ve build a cocktail mixer application. Enter your ingredients and see which cocktails you can offer your guests.'
             },
         ]
-    }
+    },
 ];
 
 export default projects;
