@@ -15,7 +15,6 @@ function App() {
     return (
         <div>
             <Container>
-                <a name="home"/>
                 <Header/>
                 <SocialMedia media={media}/>
                 <Parallax speed={6}>
